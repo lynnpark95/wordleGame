@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 10px;
+}
+
+.header-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-icon img {
+  width: 25px;
+  height: 25px;
+  padding: 0 5px 0 5px;
+}
+.header-title {
+  font-size: 30px;
+}

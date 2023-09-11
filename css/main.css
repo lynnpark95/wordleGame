@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  /* padding: 50px; */
+  margin: 20px 0px 20px 0px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.board-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d3d6da;
+  width: 60px;
+  height: 60px;
+}
