@@ -15,8 +15,8 @@ header {
 .header-icon img {
   width: 25px;
   height: 25px;
-  padding: 0 5px 0 5px;
+  padding: 5px 5px 0 5px;
 }
 .header-title {
-  font-size: 30px;
+  font-size: 50px;
 }
