@@ -1,4 +1,3 @@
-const answer = "HARRY";
 let index = 0;
 let row = 0;
 let timerId = 0;
@@ -19,14 +18,20 @@ appStart = () => {
 
   const nextLine = () => {
     if (row === 6) {
-      return gameOver;
+      return gameOver();
     }
     row += 1;
     index = 0;
   };
 
-  const handleEnterKey = () => {
+  const handleEnterKey = async () => {
     let numOfAnswer = 0;
+    const response = await fetch("/answer");
+    console.log(response);
+    const answer_object = await response.json();
+    console.log(answer_object);
+    const answer = answer_object.answer;
+    console.log(answer);
 
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
